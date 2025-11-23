@@ -211,7 +211,9 @@ body {
     border-left: 4px solid #003366;
 }
 
-.principles-content {
+.principles-content,
+.about-content,
+.services-content {
     padding: 20px;
     background: rgba(0, 51, 102, 0.05);
     border-radius: 10px;
