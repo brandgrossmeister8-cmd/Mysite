@@ -254,7 +254,9 @@ body {
 
 .principles,
 .about,
-.services {
+.services,
+.testimonials,
+.media {
     margin-bottom: 40px;
     text-align: left;
     scroll-margin-top: 100px;
@@ -267,6 +269,8 @@ body {
 .principles h2,
 .about h2,
 .services h2,
+.testimonials h2,
+.media h2,
 .contact h2 {
     font-size: 24px;
     color: #2c3e50;
@@ -279,6 +283,8 @@ body {
 .principles h2::after,
 .about h2::after,
 .services h2::after,
+.testimonials h2::after,
+.media h2::after,
 .contact h2::after {
     content: '';
     position: absolute;
@@ -370,7 +376,79 @@ body {
     text-decoration: underline;
 }
 
+.cta-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    background: #003366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 51, 102, 0.3);
+}
+
+.cta-button:hover {
+    background: #001a33;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 51, 102, 0.4);
+}
+
+.testimonial-content {
+    padding: 20px;
+    background: rgba(0, 51, 102, 0.05);
+    border-radius: 10px;
+    margin: 20px 0;
+    line-height: 1.8;
+    color: #444;
+    text-align: center;
+}
+
+.media-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.media-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #4169E1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(65, 105, 225, 0.3);
+    width: 100%;
+    max-width: 500px;
+}
+
+.media-button:hover {
+    background: #1e50c7;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(65, 105, 225, 0.4);
+}
+
 @media (max-width: 768px) {
+    .main-nav {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .main-nav a {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
     .chess-background {
         padding: 10px;
     }
@@ -427,9 +505,21 @@ body {
     .principles h2,
     .about h2,
     .services h2,
+    .testimonials h2,
+    .media h2,
     .contact h2 {
         font-size: 18px;
         padding-bottom: 10px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .media-button {
+        font-size: 14px;
+        padding: 12px 20px;
     }
 
     .principles ul li,
@@ -466,6 +556,11 @@ body {
 }
 
 @media (max-width: 480px) {
+    .main-nav a {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
     .profile-card {
         padding: 30px 15px;
     }
@@ -512,8 +607,20 @@ body {
     .principles h2,
     .about h2,
     .services h2,
+    .testimonials h2,
+    .media h2,
     .contact h2 {
         font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    .media-button {
+        font-size: 13px;
+        padding: 10px 15px;
     }
 
     .principles ul li,
