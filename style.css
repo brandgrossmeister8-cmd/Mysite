@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Brittany+Signature&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -420,6 +422,40 @@ body {
     text-align: center;
 }
 
+.quote-block {
+    margin: 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.quote-line {
+    margin-bottom: 15px;
+}
+
+.quote-text {
+    font-family: 'Brittany Signature', cursive;
+    font-size: 16px;
+    color: #003366;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+.quote-author {
+    font-family: 'Brittany Signature', cursive;
+    font-size: 16px;
+    color: #003366;
+    font-style: italic;
+    margin-left: 8px;
+}
+
+.quote-explanation {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+}
+
 .media-buttons {
     display: flex;
     flex-direction: column;
@@ -568,6 +604,18 @@ body {
         display: inline-block;
     }
 
+    .quote-text {
+        font-size: 14px;
+    }
+
+    .quote-author {
+        font-size: 14px;
+    }
+
+    .quote-explanation {
+        font-size: 13px;
+    }
+
     .profile-card::before,
     .profile-card::after {
         font-size: 20px;
@@ -668,6 +716,18 @@ body {
 
     .contact-item {
         font-size: 14px;
+    }
+
+    .quote-text {
+        font-size: 13px;
+    }
+
+    .quote-author {
+        font-size: 13px;
+    }
+
+    .quote-explanation {
+        font-size: 12px;
     }
 
     .profile-card::before,
